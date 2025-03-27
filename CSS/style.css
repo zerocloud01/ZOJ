@@ -68,7 +68,7 @@ body {
 }
 
 /* 左侧主要内容区 */
- .main-content {
+.main-content {
     flex: 3;
     order: 0;           
     display: flex;
