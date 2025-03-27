@@ -11,51 +11,6 @@ body {
     background-image: linear-gradient(#62bbff,#FFF);
 }
 
-/* === 导航栏样式 === */
-.navbar {
-    background-color: #16cfd9; /* 背景颜色 */
-    color: white;             /* 文字颜色 */
-    padding: 1rem;           /* 内边距 */
-    position: fixed;         /* 导航栏不随页面滚动 */
-    width: 100%;            /* 满行 */
-    top: 0;                 
-    z-index: 1000;          /* 显示在最上层 */
-}
-
-/* 导航栏内容容器 */
-.nav-container {
-    max-width: 1200px;      /* 最大宽度限制为1200px */
-    margin: 0 auto;         /* 水平居中 */
-    display: flex;          
-    justify-content: space-between; /* 子元素两端对齐 */
-    align-items: center;
-}
-
-/* 网站Logo样式 */
-.logo {
-    font-size: 1.5rem;      
-    font-weight: bold;      /* 加粗显示 */
-}
-
-/* 导航链接容器 */
-.nav-links {
-    display: flex;          
-    gap: 2rem;              
-    align-items: center;
-}
-
-/* 导航链接样式 */
-.nav-links a {
-    color: white;          
-    text-decoration: none;  
-    transition: color 0.3s; /* 过渡效果 */
-}
-
-/* 导航链接悬停状态 */
-.nav-links a:hover {
-    color: #3498db;         /* 悬停时变为蓝色 */
-}
-
 /* === 主体内容区域 === */
 .container {
     max-width: 1200px;      /* 限制最大宽度 */
@@ -77,59 +32,6 @@ body {
     gap: 20px;
 }
 
-
-.slide-images {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;     
-}
-
-.slider-track {
-    display: flex;
-    width: 300%;           
-    height: 100%;
-    transition: transform 0.5s ease-in-out; 
-}
-
-.slide-img {
-    width: 33.3333%;       
-    height: 100%;
-    flex-shrink: 0;        
-    background-size: cover;
-    background-position: center;
-}
-
-.slide-buttons {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-.l-btn,
-.r-btn {
-    width: 30px;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 20px;
-    user-select: none;
-    transition: background-color 0.3s;
-}
-
-.l-btn:hover,
-.r-btn:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-} 
-
 /* === 右侧边栏 === */
 .sidebar {
     flex: 1;                
@@ -141,6 +43,7 @@ body {
 
 /* === 卡片通用样式 === */
 .card {
+    min-width: 200px;
     background: white;
     border-radius: 8px;
     padding: 20px;

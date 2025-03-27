@@ -1,0 +1,44 @@
+/* === 导航栏样式 === */
+.navbar {
+    background-color: #16cfd9; /* 背景颜色 */
+    color: white;             /* 文字颜色 */
+    padding: 1rem;           /* 内边距 */
+    position: fixed;         /* 导航栏不随页面滚动 */
+    width: 100%;            /* 满行 */
+    top: 0;                 
+    z-index: 1000;          /* 显示在最上层 */
+}
+
+/* 导航栏内容容器 */
+.nav-container {
+    max-width: 1200px;      /* 最大宽度限制为1200px */
+    margin: 0 auto;         /* 水平居中 */
+    display: flex;          
+    justify-content: space-between; /* 子元素两端对齐 */
+    align-items: center;
+}
+
+/* 网站Logo样式 */
+.logo {
+    font-size: 1.5rem;      
+    font-weight: bold;      /* 加粗显示 */
+}
+
+/* 导航链接容器 */
+.nav-links {
+    display: flex;          
+    gap: 2rem;              
+    align-items: center;
+}
+
+/* 导航链接样式 */
+.nav-links a {
+    color: white;          
+    text-decoration: none;  
+    transition: color 0.3s; /* 过渡效果 */
+}
+
+/* 导航链接悬停状态 */
+.nav-links a:hover {
+    color: #3498db;         /* 悬停时变为蓝色 */
+}

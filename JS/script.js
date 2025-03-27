@@ -1,13 +1,13 @@
 let img_slide = null;
 const N = 3;
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('../head/head.html') // 页头
+    fetch('../html/head.html') // 页头
         .then(response => response.text())
         .then(html => {
             document.getElementById('head').innerHTML = html;
         });
 
-    fetch('../sider/sider.html') // 侧栏
+    fetch('../html/sider.html') // 侧栏
         .then(response => response.text())
         .then(html => {
             document.getElementById('sider').innerHTML = html;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 预加载所有图片
     function preloadImages() {
         document.querySelectorAll('.slide-img').forEach((img, i) => {
-            img.style.backgroundImage = `url("../home/img${i+1}.jpg")`;
+            img.style.backgroundImage = `url("../photo/c${i+1}.jpg")`;
         });
     }
     preloadImages();
