@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZOJ</title>
-    <!-- markdown解析库 -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <title>题目详情 - Zero OJ</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/head.css">
-    <link rel="stylesheet" href="../CSS/slide.css">
-    <link rel="stylesheet" href="../CSS/sider.css">
-    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="../CSS/problem.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <nav id="head"></nav>
-    <div>
-        
-    </div>
     
+    <div class="container">
+        <div class="problem-container">
+            <!-- 左侧题目区域 -->
+            <div class="problem-detail">
+              <h1 id="problemTitle"></h1>
+              <div id="problemContent"></div>
+            </div>
+            
+            <!-- 右侧代码编辑区 -->
+            <div class="code-editor">
+              <div class="editor-toolbar">
+                <select id="language-select">
+                  <option value="cpp">C++</option>
+                  <option value="python">Python</option>
+                  <option value="java">Java</option>
+                </select>
+                <button id="run-code">运行代码</button>
+              </div>
+              <textarea id="code-input" spellcheck="false"></textarea>
+              <div class="output-container">
+                <h3>运行结果</h3>
+                <pre id="output-result"></pre>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="../JS/problem.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>
