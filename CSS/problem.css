@@ -65,7 +65,7 @@
   padding: 15px;
   border-radius: 5px;
 }
-/* 编辑蛆内容 */
+/* 编辑区内容 */
 .code-editor {
   flex: 1;
   display: flex;
@@ -79,7 +79,7 @@
   font-size: 14px;
   padding: 10px;
   border: 1px solid #ddd;
-  background-color: #000000cc;
+  /* background-color: #000000cc; */
   border-radius: 5px;
   resize: none;
   tab-size: 2;
