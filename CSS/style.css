@@ -66,6 +66,7 @@ body {
 }
 
 .rand-q {
+    flex: 3;
     order: 2;
     flex: 0 0 100%;
     background: white;
